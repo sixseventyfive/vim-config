@@ -6,14 +6,20 @@ Plug 'tpope/vim-fugitive'
 "Plug 'python-mode/python-mode', { 'branch': 'develop' }
 "Plug 'bling/vim-bufferline'
 call plug#end()
-let g:pymode_python = 'python3'
-let g:airline#extensions#tabline#enabled = 1
+"Pymode settings
+"let g:pymode_python = 'python3'
+"let g:airline#extensions#tabline#enabled = 1
+"git gutter settings
+let g:gitgutter_map_keys=0
+set updatetime=100
+"general vim settings
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set wrap!
 set number
 set autoindent
 set ruler
 filetype indent on
+"run sql and python code
 noremap <F10> :w<bar>:!sqlcmd -S HLT439SQL005 -E -d MHDC_UAT -o H:\temp.csv -s , -i %:p<CR><bar><CR>
 noremap <F5> :!sqlcmd -S HLT439SQL005 -E -d MHDC_UAT -o H:\temp.csv -s "	"
 noremap <leader>p "*
