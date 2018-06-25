@@ -3,6 +3,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 "Plug 'python-mode/python-mode', { 'branch': 'develop' }
 "Plug 'bling/vim-bufferline'
 call plug#end()
