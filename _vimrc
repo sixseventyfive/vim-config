@@ -7,6 +7,9 @@ Plug 'tpope/vim-surround'
 "Plug 'python-mode/python-mode', { 'branch': 'develop' }
 "Plug 'bling/vim-bufferline'
 call plug#end()
+set guifont=DejaVu_Sans_Mono_for_Powerline:h10
+set encoding=utf-8
+let g:airline_powerline_fonts = 1
 "Pymode settings
 "let g:pymode_python = 'python3'
 "let g:airline#extensions#tabline#enabled = 1
