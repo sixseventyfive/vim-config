@@ -5,9 +5,14 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'chrisbra/csv.vim'
+Plug 'gioele/vim-autoswap'
 "Plug 'python-mode/python-mode', { 'branch': 'develop' }
 "Plug 'bling/vim-bufferline'
 call plug#end()
+syntax on
+set background=dark
+colorscheme PaperColor
+"colorscheme hybrid
 set guifont=DejaVu_Sans_Mono_for_Powerline:h10
 set encoding=utf-8
 let g:airline_powerline_fonts = 1
