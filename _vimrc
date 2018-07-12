@@ -33,9 +33,14 @@ filetype indent on
 "run sql and python code
 noremap <leader>p "*
 noremap <F7> <Esc>:w<CR>:!python %<CR>
-noremap <F8> <Esc>:w<CR>:%!yapf<CR>
 nnoremap K i<CR><Esc>
 set backspace=indent,eol,start
 set laststatus=2
 set noshowmode
 set autoread
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    %s/\s\+$//e
+    call winrestview(l:save)
+endfun
+noremap <F9> :call TrimWhitespace()<CR>
