@@ -31,11 +31,8 @@ set autoindent
 set ruler
 filetype indent on
 "run sql and python code
-noremap <F10> :w<bar>:!sqlcmd -S HLT439SQL005 -E -d master -o H:\temp.csv -s ; -i %:p<CR><bar><CR>
-noremap <F5> :!sqlcmd -S HLT439SQL005 -E -d MHDC_UAT -o H:\temp.csv -s ","
 noremap <leader>p "*
 noremap <F7> <Esc>:w<CR>:!python %<CR>
-noremap <F6> <Esc>:w<CR>:%!python C:\Users\cstuar01\vim80\sql_formatter.py<CR>:%s/GO/\rGO\r/g<CR>
 noremap <F8> <Esc>:w<CR>:%!yapf<CR>
 nnoremap K i<CR><Esc>
 set backspace=indent,eol,start
